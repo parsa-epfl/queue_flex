@@ -24,10 +24,5 @@ Then, run the tests and make sure everything works: `py.test`
 
 ## Experiments to Reproduce
 
-The discrete-event simulations from the paper "The Nebula RPC-Optimized Architecture" can all be reproduced by using the top-level file "neb_qmodel.py".
-
-For the paper "Cooperative Concurrency Control for Write-Intensive Key-Value Workloads", use the following top-level files and their corresponding experiments:
-compare_system_excess_tlat.py -> Compares excess tail latency of various concurrency control policies.
-crew_comp_sim.py -> Generates the throughput under SLO of the CREW policy as well as CREW plus compaction.
-comp_detailed_study.py -> Allows studying the various statistics of d-CREW and compaction, plotting a user-defined graph per load point.
+The configurations to reproduce experiments from the ``Cooperative Concurrency Control'' paper are found in the artifact appendix of the full paper.
 
