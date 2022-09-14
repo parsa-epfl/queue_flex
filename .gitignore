@@ -1,0 +1,13 @@
+# Ignore compiled binaries, config files
+*.o
+obj_opt/
+*.pyc
+__pycache__/
+*.bak
+tags
+.DS_Store
+.ipynb_checkpoints/
+.vscode/
+
+# Virtual environments
+*venv/
