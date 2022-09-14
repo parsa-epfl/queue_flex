@@ -23,7 +23,7 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..components.cache_state import KVPair, PrivateDataCache
+from components.cache_state import KVPair, PrivateDataCache
 
 import pytest
 

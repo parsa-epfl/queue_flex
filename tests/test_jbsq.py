@@ -23,7 +23,7 @@
 
 #!/usr/bin/env python
 # Author: Mark Sutherland, (C) 2021
-from ..components.dispatch_policies.JBSQ import (
+from components.dispatch_policies.JBSQ import (
     JBSCREWDispatchPolicy,
     DynJBSCREWDispatchPolicy,
 )

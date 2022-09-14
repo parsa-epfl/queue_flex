@@ -23,7 +23,7 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..components.bucketed_index import BucketedIndex, is_odd
+from components.bucketed_index import BucketedIndex, is_odd
 from .shared_fixtures import simpy_env
 
 import pytest

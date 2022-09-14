@@ -25,7 +25,7 @@
 ## Author: Mark Sutherland, (C) 2021
 
 #  Test the rollHit function's accuracy as its used by many components.
-from ..components.load_generator import rollHit
+from components.load_generator import rollHit
 from collections import Counter
 from math import ceil
 import random

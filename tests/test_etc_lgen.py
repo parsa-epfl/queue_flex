@@ -25,9 +25,9 @@
 ## Author: Mark Sutherland, (C) 2021
 
 # Test the ETC load generator.
-from ..components.fb_etc_lgen import ETCLoadGen
-from ..components.fb_etc_dists import ETCValueDistribution
-from ..components.zipf_gen import ZipfKeyGenerator
+from components.fb_etc_lgen import ETCLoadGen
+from components.fb_etc_dists import ETCValueDistribution
+from components.zipf_gen import ZipfKeyGenerator
 from .shared_fixtures import simpy_env_store, simpy_env
 
 import pytest

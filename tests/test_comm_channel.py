@@ -23,7 +23,7 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..components.comm_channel import CommChannel, portable_get_q_depth
+from components.comm_channel import CommChannel, portable_get_q_depth
 from .shared_fixtures import simpy_env
 import simpy
 

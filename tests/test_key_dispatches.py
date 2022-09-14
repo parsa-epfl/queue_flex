@@ -23,8 +23,8 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..components.requests import RPCRequest
-from ..components.dispatch_policies.key_based_policies import (
+from components.requests import RPCRequest
+from components.dispatch_policies.key_based_policies import (
     EREWDispatchPolicy,
     CREWDispatchPolicy,
 )

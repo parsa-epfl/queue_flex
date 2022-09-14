@@ -291,7 +291,6 @@ def main():
         "reqs_to_sim": args.reqs_to_sim,
         "cores": args.cores,
         "hash_buckets": args.hash_buckets,
-        "defer_count": args.defer_count,
         "compaction_time": args.compaction_time,
         "turbo_boost": args.turbo_boost,
     }

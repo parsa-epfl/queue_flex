@@ -26,7 +26,7 @@
 # Holds utility functions that are NOT explicitly fixtures.
 
 import simpy
-from ..components.comm_channel import CommChannel
+from components.comm_channel import CommChannel
 
 
 def make_comm_channel(env, lat):

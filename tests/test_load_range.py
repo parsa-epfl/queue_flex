@@ -26,8 +26,8 @@
 
 # Test that the component for making normalized load ranges matches expected lambdas.
 
-from ..components.load_range import RangeMaker
-from ..components.mock_stime_gen import MockServiceTimeGenerator
+from components.load_range import RangeMaker
+from components.mock_stime_gen import MockServiceTimeGenerator
 from .shared_fixtures import simpy_env
 from numpy import linspace, concatenate
 

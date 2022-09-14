@@ -28,8 +28,8 @@
 
 import pytest
 import simpy
-from ..components.bucketed_index import BucketedIndex
-from ..components.requests import RPCRequest
+from components.bucketed_index import BucketedIndex
+from components.requests import RPCRequest
 
 
 @pytest.fixture

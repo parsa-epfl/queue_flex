@@ -23,7 +23,7 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..components.bucketed_index import BucketedIndex, AsyncIndexUpdater
+from components.bucketed_index import BucketedIndex, AsyncIndexUpdater
 from .shared_fixtures import simpy_env, create_bucketed_index
 
 import pytest

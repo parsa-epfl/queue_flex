@@ -23,8 +23,8 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..components.request_filter_lambdas import reqs_conflict
-from ..components.requests import RPCRequest
+from components.request_filter_lambdas import reqs_conflict
+from components.requests import RPCRequest
 
 import pytest
 

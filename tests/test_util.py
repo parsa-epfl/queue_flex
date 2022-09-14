@@ -23,7 +23,7 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..util.string_ops import conv_file_suffix
+from util.string_ops import conv_file_suffix
 
 import pytest
 

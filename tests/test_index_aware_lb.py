@@ -23,11 +23,11 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..components.requests import RPCRequest, PullFeedbackRequest
-from ..components.end_measure import EndOfMeasurements
-from ..components.dispatch_policies.key_based_policies import CREWDispatchPolicy
-from ..components.load_balancer import IndexAwareLoadBalancer
-from ..components.bucketed_index import is_odd
+from components.requests import RPCRequest, PullFeedbackRequest
+from components.end_measure import EndOfMeasurements
+from components.dispatch_policies.key_based_policies import CREWDispatchPolicy
+from components.load_balancer import IndexAwareLoadBalancer
+from components.bucketed_index import is_odd
 from .shared_fixtures import (
     simpy_env,
     simpy_env_queues,

@@ -23,8 +23,8 @@
 
 #!/usr/bin/env python
 ## Author: Mark Sutherland, (C) 2021
-from ..components.epoch_tracker import EpochTracker
-from ..components.global_sequencer import GlobalSequencer
+from components.epoch_tracker import EpochTracker
+from components.global_sequencer import GlobalSequencer
 from .shared_fixtures import simpy_env
 
 import pytest
