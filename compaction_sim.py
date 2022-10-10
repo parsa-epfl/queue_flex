@@ -78,7 +78,7 @@ def parse_sim_results(rangeMaker, flat_results, odict, output_fields):
 def find_max_load_and_tlat(df, percentile, slo):
     # Sort dict by lowest load first and set max to lowest load
     sorted_d = OrderedDict(sorted(df.items(),key=lambda t: t[0]))
-    max_load = list(df.keys())[0]
+    max_load = list(sorted_d.keys())[0]
     tlat = df[max_load][percentile]
 
     # Search for higher load points
