@@ -31,6 +31,7 @@ import matplotlib as mpl
 import numpy as np
 import os
 from datetime import datetime
+from collections import OrderedDict
 
 # Module interfaces
 from parallel import Invoker
@@ -75,11 +76,13 @@ def parse_sim_results(rangeMaker, controller, output_fields, num_threads):
 
 
 def find_max_load_and_tlat(df, percentile, slo):
-    max_load = sorted(df.keys()).pop(0)  # Default max is the lowest load
+    # Sort dict by lowest load first and set max to lowest load
+    sorted_d = OrderedDict(sorted(df.items(),key=lambda t: t[0]))
+    max_load = list(df.keys())[0]
     tlat = df[max_load][percentile]
 
     # Search for higher load points
-    for load, row in df.items():
+    for load, row in sorted_d.items(): # iterates from lowest->highest load b/c of sort
         if row[percentile] > slo:
             break
         elif load > max_load:
@@ -152,8 +155,8 @@ def main():
     parser.add_argument(
         "--data_points",
         type=int,
-        help="Number of data points between load range [0.05,1.0]. Default = 16",
-        default=16,
+        help="Number of data points between load range [0.05,1.0]. Default = 24",
+        default=24,
     )
     parser.add_argument(
         "--reqs_to_sim",
