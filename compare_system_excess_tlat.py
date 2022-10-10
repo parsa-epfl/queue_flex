@@ -155,8 +155,8 @@ def main():
     parser.add_argument(
         "--data_points",
         type=int,
-        help="Number of data points between load range [0.05,1.0]. Default = 16",
-        default=16,
+        help="Number of data points between load range [0.05,1.0]. Default = 24",
+        default=24,
     )
     parser.add_argument(
         "--reqs_to_sim",
